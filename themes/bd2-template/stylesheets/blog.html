@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<!-- Basic Page Needs
+  	================================================== -->
+	<meta charset="utf-8">
+	<title>{{ meta.title }} - {{ site_title }}</title>
+	<meta name="description" content="{{ meta.description }}" />
+	<meta name="author" content="{{ meta.author }}" />
+    <meta name="google-site-verification" content="VYeDBXw2PwuWhCP08_b_W_NEbIt9VVKoXptje6G_Ft8" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+  	================================================== -->
+    <link rel="stylesheet" href="{{ theme_url }}/stylesheets/base.css" />
+    <link rel="stylesheet" href="{{ theme_url }}/stylesheets/skeleton.css" />
+    <link rel="stylesheet" href="{{ theme_url }}/stylesheets/layout.css" />
+    <link rel="stylesheet" href="{{ theme_url }}/stylesheets/agility/jquery-ui-1.10.4.custom.min.css" />
+  	<link rel="stylesheet" href="{{ theme_url }}/style.css" />
+	
+	<!-- prettyPhoto plugin -->
+	<link rel="stylesheet" href="{{ theme_url }}/javascripts/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+	
+	<!-- FlexSlider plugin -->
+	<link rel="stylesheet" href="{{ theme_url }}/javascripts/flexslider/flexslider.css" type="text/css" media="screen" />	
+	
+	<!-- Fancybox Styles -->
+	<link rel="stylesheet" href="{{ theme_url }}/fancybox/source/jquery.fancybox.css?v=2.0.4" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ theme_url }}/fancybox/source/helpers/jquery.fancybox-buttons.css?v=2.0.4" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ theme_url }}/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.4" type="text/css" media="screen" />
+	
+	
+	<!-- Favicons -->
+        <link rel="shortcut icon" href="{{ theme_url }}/images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ theme_url }}/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ theme_url }}/images/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon-16x16.png" sizes="16x16">
+        <link rel="mask-icon" href="{{ theme_url }}/images/safari-pinned-tab.svg" color="#5bbad5 ">
+        <link rel="manifest" href="{{ theme_url }}/images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="msapplication-TileImage" content="{{ theme_url }}/images/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+	<!-- Fonts
+	================================================== -->	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Montserrat:400,700" rel="stylesheet" /> 
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<!-- Modernizr -->
+	<script type="text/javascript" src="{{ theme_url }}/javascripts/modernizr.js"></script>
+	
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="{{ theme_url }}/stylesheets/ie7.css">
+	<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31739816-192', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-830750-N');
+</script>
+
+</head>
+<body class="skin-red bkg-fiber">
+<div class="wrap">
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Header -->
+	<header id="header" class="container">
+		
+		<div id="header-inner" class="sixteen columns over">
+			
+			<div id="masthead" class="one-third column alpha">
+				<h1 id="site-title" class="remove-bottom"><a href="{{ base_url }}"><img src="{{ theme_url }}/images/LAMB_ID_LOGO_2.png" style="width:260px;" alt="Lambent Consulting, Inc." title="Offshore Better | Philippines BPO and Call Center Sourcing"></a></h1>
+				<!-- h2 id="sub-title">Process / Marketing / Consulting</h2 -->
+			</div>
+			
+			<nav id="main-nav" class="two-thirds column omega">
+                <a href="#main-nav-menu" class="mobile-menu-button button">+ Menu</a>
+                <ul id="main-nav-menu" class="nav-menu">
+                    <li><a href="{{ base_url }}/">Home</a></li>
+                    <li class="menu-item-has-children"><a href="{{ base_url }}/about-us/">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="{{ base_url }}/about-us/who-we-are/">Who We Are</a></li>
+                            <li><a href="{{ base_url }}/about-us/where-we-work/">Where We Work</a></li>
+                            <li><a href="{{ base_url }}/about-us/what-we-think/">What We Think</a></li>
+                            <li><a href="{{ base_url }}/about-us/how-we-work/">How We Work</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children"><a href="{{ base_url }}/services/">Services</a>
+                        <ul class="sub-menu">
+                            {{blog}}
+                        </ul>
+                    </li>
+                    <!-- <li id="menu-item-1218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1218"><a href="{{ base_url }}/blog/">Blog</a></li> -->
+                    <li><a href="{{ base_url }}/blog/">Blog</a></li>
+                    <li><a href="{{ base_url }}/contact/">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+		</div>
+		
+	</header>
+	<!-- end Header -->
+
+    <!-- Main Container -->
+    <div class="container">
+                    
+        <!-- main content -->
+        <div class="sixteen columns" id="main" role="main">
+            <!-- Single Post -->
+            <article class="post single">           
+                <header>    
+                    <h1 class="page-title" >{{ meta.title }}</h1>                   
+                </header>
+                                
+            {% for page in pages|sort_by("time")|reverse %}
+                {% if page.id starts with "blog/" %}
+                <div class="post-content">
+                    <h2 class="post-title">
+                        <a href="{{ page.url }}">
+                            {{ page.title }}
+                        </a>
+                    </h2>
+                    <p>{{ page.description }}</p>
+                    <p class="post-meta">Posted on {{ page.date }}</p>
+                </div>
+                {% endif %}
+            {% endfor %}
+                
+            </article>  
+            <!-- end .post -->
+        </div>
+        <!-- end #main content layout -->
+        
+        <!-- sidebar -->
+        <!-- end .sidebar -->
+        
+    </div>
+    <!-- end .container -->
+
+    <!-- footer -->
+    
+    
+    <footer id="colophon">
+        <div class="footer-upper container">
+            
+            <div class="one-third column">
+                <h3>kai&middot;zen</h3>
+                <ol>
+                    <li>a state-of-mind that seeks constant improvement</li>
+                    <li>a way to manage the inherent challenges of moving processes</li>
+                </ol>
+                <a href="{{ base_url }}/privacy/" title="Privacy Policy">Privacy</a> | <a href="{{ base_url }}/terms/" title="Terms &amp; Conditions">Terms</a>       
+            </div>
+            
+            <div class="one-third column">
+                <h3>Get in touch</h3>
+                    <strong>Lambent</strong>
+                    <p>Unit 5K - Azotea de BelAir, Polaris Street<br />
+                    Poblacion, Makati City, Philippines<br />
+                    <a href="{{ base_url }}/contact/">+63.2.368.5731</a>
+                    <br/>
+                    <a class="button"  style="margin:.5em 0 0 0;" href="{{ base_url }}/contact/">Contact</a>
+                    </p>
+                    
+                    <a href="https://plus.google.com/102927770557375036816" target="_blank" class="social-media tooltip-container" title="Fan on Facebook" ><span class="tooltip-anchor icon googleplus-icon"></span><span class="tooltip">Google+</span></a>
+                    <a href="https://twitter.com/lambentconsult" target="_blank" class="social-media tooltip-container" title="Follow on Twitter"><span class="tooltip-anchor icon twitter-icon"></span><span class="tooltip">Twitter</span></a>
+                    <a href="https://www.linkedin.com/company/lambent-consulting" target="_blank" class="social-media tooltip-container" title="Fan on Facebook" ><span class="tooltip-anchor icon linkedin-icon"></span><span class="tooltip">LinkedIn</span></a>
+                    <a href="https://www.facebook.com/lambent.co" target="_blank" class="social-media tooltip-container" title="Fan on Facebook" ><span class="tooltip-anchor icon facebook-icon"></span><span class="tooltip">Facebook</span></a>
+                
+            </div>
+            
+            <div class="one-third column">
+                <div class="map_canvas" 
+                    data-lat="29.993289"
+                    data-lng="-81.679773"
+                    data-address="Makati, Philippines" 
+                    data-zoom="12" 
+                    data-mapTitle="Lambent"
+                    style="height:150px;width:100%;"></div>
+            </div>
+            
+        </div>
+        
+        <div id="footer-base">
+            <div class="container">
+                <div class="eight columns">
+                    &copy; 2016 Lambent. All Rights Reserved.
+                </div>
+                <div class="eight columns far-edge">
+                    An <a href="https://lumikha.co" rel="follow">Atelier Lumikha</a> Creation.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+</div>
+<!-- end .wrap -->
+
+
+<!-- JS
+================================================== -->
+
+<!-- jQuery 1.6.2 -->
+<script src="{{ theme_url }}/javascripts/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- Tabs -->
+<script src="{{ theme_url }}/javascripts/tabs.js"></script>
+
+<!-- FlexSlider plugin -->  
+<script src="{{ theme_url }}/javascripts/flexslider/jquery.flexslider.js"></script>
+
+<!-- AJAX Contact Form plugin -->
+<!-- script type="text/javascript" src="{{ theme_url }}/ajaxcontact/js/jquery.jigowatt.js"></script -->
+
+<!-- Agility JS -->
+<script src="{{ theme_url }}/javascripts/agility.js"></script>
+
+<!-- Google Maps API -->    
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC6CMk_lQNwGtoBaKY_qg7qZT6mLV08qOM"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="{{ theme_url }}/javascripts/fix-ie.js"></script>
+<![endif]-->
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<!-- prettyPhoto plugin -->
+<script src="{{ theme_url }}/javascripts/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<!-- end Scripts -->
+
+
+<!-- End Document
+================================================== -->
+
+</body>
+</html>

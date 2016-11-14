@@ -54,19 +54,32 @@
     </script>
     
 <!-- This site is optimized with the Yoast SEO plugin v3.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content=""{{ meta.description|striptags }}"/>
-<meta name="robots" content="{{ meta.robots }} "/>
-<link rel="canonical" href="http://briandudley.me/" />
+<meta name="description" content=""{{ meta.description|striptags }}"/>  {#twig delimeter already#}
+
+<meta name="robots" content="{{ meta.robots }} "/> {#twig delimeter already#}
+
+<link rel="canonical" href="{{ "index"|link }}" /> {#twig delimeter already#}
+
 <meta property="og:locale" content="en_US" />
+
 <meta property="og:type" content="website" />
+
 <meta property="og:title" content="Brian Dudley - Makati City, Manila, Philippines" />
+
 <meta property="og:description" content="Brian Dudley: The Philippines-based financial advisor for expatriates in Manila and beyond." />
+
 <meta property="og:url" content="http://briandudley.me/" />
+
 <meta property="og:site_name" content="Brian Dudley" />
+
 <meta name="twitter:card" content="summary" />
+
 <meta name="twitter:description" content="Brian Dudley: The Philippines-based financial advisor for expatriates in Manila and beyond." />
+
 <meta name="twitter:title" content="Brian Dudley - Makati City, Manila, Philippines" />
+
 <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/briandudley.me\/","name":"Brian Dudley","potentialAction":{"@type":"SearchAction","target":"http:\/\/briandudley.me\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
 <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"http:\/\/briandudley.me\/","sameAs":["https:\/\/www.facebook.com\/profile.php?id=100000044611744","https:\/\/ph.linkedin.com\/in\/brian-dudley-6b317851"],"name":"Brian Dudley"}</script>
 <!-- / Yoast SEO plugin. -->
 

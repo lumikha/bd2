@@ -1,24 +1,28 @@
 ---
 Title: Home
 Description: About Brian Dudley.
-Address: Suite 22c, Level 22 Tower One, Philippine Stock Exchange Plaza Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
+Address1: Suite 22c, Level 22 Tower One, Philippine Stock Exchange Plaza
+Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines 
+phone: '+63-2-368-5773 '
+Email: info@premier-gc.com
+Copyright: 2015 Brian Dudley
 
 social:
-    - title: 
-      url: https://github.com/picocms/Pico
-      icon: octocat
+    - title: View Brian Dudley's profile in ZoomInfo
+      url: http://www.zoominfo.com/z/BrianDudley
+      icon: cloud
     - title: Check us out on Twitter
       url: https://twitter.com/gitpicocms
-      icon: birdy
+      icon: twitter 
     - title: Join us on Freenode IRC Webchat
       url: https://webchat.freenode.net/?channels=%23picocms
-      icon: chat
+      icon: 
     - title: 
       url: https://github.com/picocms/Pico
       icon: octocat
     - title: Check us out on Twitter
       url: https://twitter.com/gitpicocms
-      icon: birdy
+      icon: 
     - title: Join us on Freenode IRC Webchat
       url: https://webchat.freenode.net/?channels=%23picocms
       icon: chat
@@ -26,7 +30,7 @@ social:
 
 ---
 
-# About Brian Dudley bla bla bla
+## About Brian Dudley bla bla bla
 
 Living in Makati Manila, husband and father; I develop bespoke, pragmatic finance solutions for Philippines-based expatriates. All too often, people do not attend to their wealth management through practical, rational planning and disciplined execution. My mission is to provide my clients with the best market intelligence and strategic insight; help them make the smartest possible financial decisions; execute on those decisions to reach their goals.
 

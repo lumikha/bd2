@@ -1,7 +1,0 @@
----
-Title: Blog
-Template: blog
-
-
-
----

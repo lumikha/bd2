@@ -1,7 +1,9 @@
 ---
 Title: Brian Dudley Takes A Weekend Off To Tagaytay, Philippines
-Date: September 01, 2016
 Template: blog-post
+Date: 09/01/2016
+Description: Brian Dudley, Makati City, Manila, Philippines
+
 
 ---
 

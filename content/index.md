@@ -30,7 +30,7 @@ social:
 
 ---
 
-## About Brian Dudley bla bla bla
+## About Brian Dudley (localhost)
 
 Living in Makati Manila, husband and father; I develop bespoke, pragmatic finance solutions for Philippines-based expatriates. All too often, people do not attend to their wealth management through practical, rational planning and disciplined execution. My mission is to provide my clients with the best market intelligence and strategic insight; help them make the smartest possible financial decisions; execute on those decisions to reach their goals.
 

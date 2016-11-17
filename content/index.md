@@ -1,8 +1,10 @@
 ---
 Title: Home
 Description: About Brian Dudley.
+Address: Suite 22c, Level 22 Tower One, Philippine Stock Exchange Plaza Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
+
 social:
-    - title: Visit us on GitHub
+    - title: 
       url: https://github.com/picocms/Pico
       icon: octocat
     - title: Check us out on Twitter
@@ -11,6 +13,17 @@ social:
     - title: Join us on Freenode IRC Webchat
       url: https://webchat.freenode.net/?channels=%23picocms
       icon: chat
+    - title: 
+      url: https://github.com/picocms/Pico
+      icon: octocat
+    - title: Check us out on Twitter
+      url: https://twitter.com/gitpicocms
+      icon: birdy
+    - title: Join us on Freenode IRC Webchat
+      url: https://webchat.freenode.net/?channels=%23picocms
+      icon: chat
+
+
 ---
 
 # About Brian Dudley bla bla bla

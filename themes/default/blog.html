@@ -149,11 +149,13 @@ img.emoji {
                     
         <!-- main content -->
         <div class="sixteen columns" id="main" role="main">
+        <div class="row">						
+    		<div class="col-md-8 col-md-offset-2">
             <!-- Single Post -->
             <article class="post single">           
                 <header>    
-                    <h1 class="page-title" >{{ meta.title }}</h1>                   
-                </header>
+                    <h1 class="page-title">{{ meta.title }}</h1>                   
+		        </header>
                                 
             {% for page in pages|sort_by("time")|reverse %}
                 {% if page.id starts with "blog/" %}
@@ -163,42 +165,47 @@ img.emoji {
                             {{ page.title }}
                         </a>
                     </h2>
-                    <p>{{ page.description }}</p>
-                    <p class="post-meta">Posted on {{ page.date }}</p>
-                </div>
+                    <p class="blog_meta"><i>{{ page.date }}</i></p>
+                  
+
+
+				</div>
                 {% endif %}
             {% endfor %}
+
+
                 
             </article>  
             <!-- end .post -->
         </div>
+        </div>
 
       <hr>
 
-      <footer>
+  <footer>
         <div class="row">
-                <div class="col-md-12 center center">
+            <div class="col-md-12 center center">
                 {{meta.address1 }} <br>
                 {{meta.address2}}<br><br>
-                
                 {{meta.phone}} <br>
 
-                
 
-               <a href="mailto:">{{meta.email}}</a> 
 
-                </div>
+
+               		<a href="mailto:">{{meta.email}}</a> 
+
+            </div>
                 
             </div>
         <div class="row">
           <div class="col-xs-4" style="text-align: center;">
             <p>&copy; {{meta.copyright}}</p>
           </div>
-          <div class="col-xs-8 col-md-3 pull-right"> <!--make a meta title (social)-->
+          <div class="col-xs-8 col-md-4 pull-right"> <!--make a meta title (social)-->
 
           {% for social in meta.social %}
-                    <a href="{{ social.url }}" title="{{ social.title }}"><span class="fa fa-lg"> <i class="fa-{{social.icon}}">&nbsp</i></span></a>
-                {% endfor %}
+             <a href="{{ social.url }}" title="{{ social.title }}"><span><img src=" {{ social.icon }}"></span></a>
+          {% endfor %}
                  
           </div>
       </footer>

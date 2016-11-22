@@ -160,8 +160,7 @@ img.emoji {
         <div class="row">
                 <div class="col-md-12 center center">
                 {{meta.address1 }} <br>
-                {{meta.address2}}<br><br>
-                
+                {{meta.address2}}<br><br>               
                 {{meta.phone}} <br>
 
 
@@ -178,8 +177,8 @@ img.emoji {
           <div class="col-xs-8 col-md-3 pull-right"> <!--make a meta title (social)-->
 
           {% for social in meta.social %}
-                    <a href="{{ social.url }}" title="{{ social.title }}"><span class="fa fa-lg"> <i class="fa-{{social.icon}}">&nbsp</i></span></a>
-                {% endfor %}
+             <a href="{{ social.url }}" title="{{ social.title }}"><span><img src=" {{ social.icon }}"></span></a>
+          {% endfor %}
                  
           </div>
       </footer>

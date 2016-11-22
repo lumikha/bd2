@@ -8,7 +8,7 @@ Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
 phone: '+63-2-368-5773 '
 Email: info@premier-gc.com
 Copyright: 2015 Brian Dudley
-
+Excerpt: MANILA, Philippines — We decided to have a quick weekend getaway to a popular destination that is just close from home. Just two to three hours from the Philippine capital Manila, Tagaytay is a vacation destination even for an instantaneous decision
 
 social:
     - title: View Brian Dudley's profile in Facebook

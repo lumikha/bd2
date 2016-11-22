@@ -8,7 +8,7 @@ Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
 phone: '+63-2-368-5773 '
 Email: info@premier-gc.com
 Copyright: 2015 Brian Dudley
-
+Excerpt: Our family’s next vacation destination was the beautiful island of Panglao in Bohol, still in the Visayas island group, in the Central Visayas Region in south-central Philippines. Taking about one and a quarter hour plane ride from Manila, we reached the capital of Bohol province, Tagbiliran.
 social:
     
     - title: View Brian Dudley's profile in Facebook

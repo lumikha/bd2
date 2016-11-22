@@ -154,7 +154,9 @@ img.emoji {
             <!-- Single Post -->
             <article class="post single">           
                 <header>    
-                    <h1 class="page-title">{{ meta.title }}</h1>                   
+                    <h1 class="page-title">{{ meta.title }}</h1>
+                    
+                   
 		        </header>
                                 
             {% for page in pages|sort_by("time")|reverse %}
@@ -163,12 +165,16 @@ img.emoji {
                     <h2 class="post-title">
                         <a href="{{ page.url }}">
                             {{ page.title }}
+
+                           
+
                         </a>
                     </h2>
                     <p class="blog_meta"><i>{{ page.date }}</i></p>
-                  
 
-
+                    <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>
+                     							
+                     					
 				</div>
                 {% endif %}
             {% endfor %}
@@ -179,32 +185,37 @@ img.emoji {
             <!-- end .post -->
         </div>
         </div>
+        </div>
+        </div>
+        
 
       <hr>
 
   <footer>
         <div class="row">
             <div class="col-md-12 center center">
+               
                 {{meta.address1 }} <br>
                 {{meta.address2}}<br><br>
                 {{meta.phone}} <br>
-
-
-
-
-               		<a href="mailto:">{{meta.email}}</a> 
+				
+			     <a href="mailto:">{{meta.email}}</a> 
 
             </div>
                 
-            </div>
+         </div>
         <div class="row">
-          <div class="col-xs-4" style="text-align: center;">
+
+          <div class="col-xs-4">
+
             <p>&copy; {{meta.copyright}}</p>
+
           </div>
-          <div class="col-xs-8 col-md-4 pull-right"> <!--make a meta title (social)-->
+
+          <div class="col-xs-4 pull-right"> <!--make a meta title (social)-->
 
           {% for social in meta.social %}
-             <a href="{{ social.url }}" title="{{ social.title }}"><span><img src=" {{ social.icon }}"></span></a>
+             <a href="{{ social.url }}" title="{{ social.title }}"> &nbsp &nbsp<img src=" {{ social.icon }}">&nbsp</a>
           {% endfor %}
                  
           </div>

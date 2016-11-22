@@ -229,27 +229,29 @@ img.emoji {
        <hr>
       <footer>
         <div class="row">
-                <div class="col-md-12 center center">
+            <div class="col-md-12 center center">
+               
                 {{meta.address1 }} <br>
                 {{meta.address2}}<br><br>
-                
                 {{meta.phone}} <br>
+        
+           <a href="mailto:">{{meta.email}}</a> 
 
-
-
-               <a href="mailto:">{{meta.email}}</a> 
-
-                </div>
-                
             </div>
+                
+         </div>
         <div class="row">
-          <div class="col-xs-4" style="text-align: center;">
+
+          <div class="col-xs-4">
+
             <p>&copy; {{meta.copyright}}</p>
+
           </div>
-          <div class="col-xs-8 col-md-3 pull-right"> <!--make a meta title (social)-->
+
+          <div class="col-xs-4 pull-right"> <!--make a meta title (social)-->
 
           {% for social in meta.social %}
-             <a href="{{ social.url }}" title="{{ social.title }}"><span><img src=" {{ social.icon }}"></span></a>
+             <a href="{{ social.url }}" title="{{ social.title }}"> &nbsp &nbsp<img src=" {{ social.icon }}">&nbsp</a>
           {% endfor %}
                  
           </div>

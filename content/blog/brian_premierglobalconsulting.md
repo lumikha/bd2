@@ -8,6 +8,7 @@ Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
 phone: '+63-2-368-5773 '
 Email: info@premier-gc.com
 Copyright: 2015 Brian Dudley
+Excerpt: Premier Global Consulting, Makati City, Philippines – Premier Global Consulting, a wealth advisory firm supporting expatriates stationed in throughout South-east Asia, announced its deployment of a proprietary online platform for portfolio management.
 
 
 social:

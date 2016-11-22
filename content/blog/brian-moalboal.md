@@ -8,6 +8,7 @@ Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines
 phone: '+63-2-368-5773 '
 Email: info@premier-gc.com
 Copyright: 2015 Brian Dudley
+Excerpt: CEBU, Philippines — Let’s head down to Central Visayas, to a paradise almost 90 kilometers south from the Queen City of the South—Moalboal, known for its snorkel and dive sites. 
 
 social:
     - title: View Brian Dudley's profile in Facebook

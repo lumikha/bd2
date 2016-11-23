@@ -191,34 +191,33 @@ img.emoji {
 <!--pagination-->
 
 <div class="row">
-<div class="col-xs-12">
-<div class="pagination"><ul>
-<li ><a href="{{ "1"|link}}">1</a></li>
-<li class="current"><a href="{{ "2"|link}}">2</a></li>
-<li><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
+  <div class="col-xs-12">
+    <div class="pagination">
+      <ul>
+        <li ><a href="{{ "1"|link}}">1</a></li>
+        <li class="current"><a href="{{ "2"|link}}">2</a></li>
+        <li><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </div>
         
 
-      <hr>
+  <hr>
 
   <footer>
-        <div class="row">
-            <div class="col-md-12 center center">
+    <div class="row">
+      <div class="col-md-12 center center">
                
-                {{meta.address1 }} <br>
-                {{meta.address2}}<br><br>
-                {{meta.phone}} <br>
+          {{meta.address1 }} <br>
+          {{meta.address2}}<br><br>
+          {{meta.phone}} <br>
 				
-			     <a href="mailto:">{{meta.email}}</a> 
+			   <a href="mailto:">{{meta.email}}</a> 
 
-            </div>
+      </div>
                 
-         </div>
+   
         <div class="row">
 
           <div class="col-xs-4">
@@ -227,12 +226,13 @@ img.emoji {
 
           </div>
 
-          <div class="col-xs-4 pull-right"> <!--make a meta title (social)-->
+          <div class="col-xs-8 pull-right"> <!--make a meta title (social)-->
 
           {% for social in meta.social %}
              <a href="{{ social.url }}" title="{{ social.title }}"> &nbsp &nbsp<img src=" {{ social.icon }}">&nbsp</a>
           {% endfor %}
                  
+          </div>
           </div>
       </footer>
     </div> <!-- /container -->

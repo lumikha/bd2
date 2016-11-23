@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -129,7 +128,7 @@ img.emoji {
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
                 <li><a href="{{ "index"|link }}">Home</a></li>
-                <li><a href="{{ "1"|link}}">Blog</a></li>  
+                <li><a href="{{ "?blog/blog" | link}}">Blog</a></li>  
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -146,25 +145,76 @@ img.emoji {
 
     <div class="container">
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        
-         {{content}}
+      <div class="container">
+                    
+        <!-- main content -->
+        <div class="sixteen columns" id="main" role="main">
+        <div class="row">						
+    		<div class="col-md-8 col-md-offset-2">
+            <!-- Single Post -->
+            <article class="post single">           
+                <header>    
+                    <h1 class="page-title">{{ meta.title }}</h1>
+                    
+                   
+		        </header>
+                                
+            {% for page in pages|sort_by("time")|reverse %}
+                {% if page.id starts with "blog/2" %}
+                <div class="post-content">
+                    <h2 class="post-title">
+                        <a href="{{ page.url }}">
+                            {{ page.title }}
+
+                           
+
+                        </a>
+                    </h2>
+                    <p class="blog_meta"><i>{{ page.date }}</i></p>
+
+                    <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>
+                     							
+                     					
+				</div>
+                {% endif %}
+            {% endfor %}
+
+
+                
+            </article>  
+            <!-- end .post -->
         </div>
+        </div>
+        </div>
+        </div>
+
+<!--pagination-->
+
+<div class="row">
+<div class="col-xs-12">
+<div class="pagination"><ul>
+<li ><a href="{{ "1"|link}}">1</a></li>
+<li class="current"><a href="{{ "2"|link}}">2</a></li>
+<li><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
         
-      </div>
 
       <hr>
 
-      <footer>
+  <footer>
         <div class="row">
             <div class="col-md-12 center center">
                
                 {{meta.address1 }} <br>
                 {{meta.address2}}<br><br>
                 {{meta.phone}} <br>
-        
-           <a href="mailto:">{{meta.email}}</a> 
+				
+			     <a href="mailto:">{{meta.email}}</a> 
 
             </div>
                 

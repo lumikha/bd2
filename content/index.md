@@ -1,5 +1,6 @@
 ---
 Title: Home
+Template: index
 Description: About Brian Dudley.
 Address1: Suite 22c, Level 22 Tower One, Philippine Stock Exchange Plaza
 Address2: Ayala Triangle, Ayala Avenue, Makati City, Manila 1226 Philippines 

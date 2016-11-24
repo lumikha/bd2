@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title> {{site_title}} </title> <!--Site Title-->
+
+         <title> {{site_title}} </title> <!--Site Title-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -121,6 +122,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta name="generator" content="WordPress 4.6.1" />
+
   </head>
 
   <body>
@@ -136,6 +138,7 @@
           </button>
           <a class="navbar-brand" href="{{ "index"|link }}">{{site_title}}</a>
         </div>
+        
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
                 <li><a href="{{ "index"|link }}">Home</a></li>
@@ -201,52 +204,45 @@
 
 <!--pagination-->
 
-<div class="row">
-<div class="col-xs-12">
-<div class="pagination"><ul>
-<li ><a href="{{ "1"|link}}">1</a></li>
-<li><a href="{{ "2"|link}}">2</a></li>
-<li class="current"><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pagination">
+             <ul>
+              <li ><a href="{{ "1"|link}}">1</a></li>
+              <li><a href="{{ "2"|link}}">2</a></li>
+              <li class="current"><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+         </div>
+        </div>
+      </div>
         
 
-      <hr>
-
+  <hr>    
+<!--footer-->
   <footer>
-        <div class="row">
-            <div class="col-md-12 center center">
-               
-                {{meta.address1 }} <br>
-                {{meta.address2}}<br><br>
-                {{meta.phone}} <br>
-				
-			     <a href="mailto:">{{meta.email}}</a> 
 
-            </div>
-                
-         </div>
-        <div class="row">
-
-          <div class="col-xs-4">
-
-            <p>&copy; {{meta.copyright}}</p>
-
-          </div>
-
-          <div class="col-xs-8 pull-right"> <!--make a meta title (social)-->
-
-          {% for social in meta.social %}
-             <a href="{{ social.url }}" title="{{ social.title }}"> &nbsp &nbsp<img src=" {{ social.icon }}">&nbsp</a>
+      <div class="row">
+        <div class="col-md-12 center">              
+          {{meta.address1 }} <br>
+          {{meta.address2}}<br><br>
+          {{meta.phone}} <br>       
+          <a href="mailto:">{{meta.email}}</a> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <p>&copy; {{meta.copyright}}</p>
+        </div>
+<!--make a meta title (social)-->
+        <div class="col-xs-8 col-md-4 pull-right"> 
+          &nbsp {% for social in meta.social %}
+            <a href="{{ social.url }}" title="{{ social.title }}"><img src=" {{ social.icon }}"></a> &nbsp &nbsp 
           {% endfor %}
-                 
-          </div>
-      </footer>
-    </div> <!-- /container -->
+        </div>
+       
+  </footer>
+    
+</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -260,12 +256,12 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{base_url}}/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type='text/javascript' src='{{base_url}}/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/{{base_url}}\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://briandudley.me/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
-<script type='text/javascript' src='http://briandudley.me/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var _wpcf7 = {"loaderUrl":"http:\/\/{{base_url}}\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","  sending"  :"Sending ..."};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://briandudley.me/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.4.2'></script>
+    <script type='text/javascript' src='http://briandudley.me/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
   </body>
 </html>

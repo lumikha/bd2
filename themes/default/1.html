@@ -238,12 +238,10 @@
 
           </div>
 
-          <div class="col-xs-8 pull-right"> <!--make a meta title (social)-->
-
-          {% for social in meta.social %}
-             <a href="{{ social.url }}" title="{{ social.title }}"> &nbsp &nbsp<img src=" {{ social.icon }}">&nbsp</a>
-          {% endfor %}
-                 
+           <div class="col-xs-8 col-md-4 pull-right"> 
+            &nbsp {% for social in meta.social %}
+              <a href="{{ social.url }}" title="{{ social.title }}"><img src=" {{ social.icon }}"></a> &nbsp &nbsp 
+            {% endfor %}
           </div>
       </footer>
     </div> <!-- /container -->

@@ -95,7 +95,8 @@
         </script>
         <style type="text/css">
         img.wp-smiley,
-        img.emoji {
+        img.emoji
+         {
             display: inline !important;
             border: none !important;
             box-shadow: none !important;
@@ -105,7 +106,7 @@
             vertical-align: -0.1em !important;
             background: none !important;
             padding: 0 !important;
-                  }
+          }
 </style>
 <link rel='stylesheet' id='contact-form-7-css'  href='{{base_url}}/content/plugins/contact-form-7/includes/css/styles.css?ver=4.4.2' type='text/css' media='all' /> <!--twig variable yay! comment to be erased-->
 
@@ -157,50 +158,39 @@
       </div>
     </div>
 
+
     <div class="container">
       <!-- Example row of columns -->
-      <div class="container">
-                    
+      <div class="container">            
         <!-- main content -->
         <div class="sixteen columns" id="main" role="main">
-        <div class="row">						
-    		<div class="col-md-8 col-md-offset-2">
+          <div class="row">						
+    		    <div class="col-md-8 col-md-offset-2">
             <!-- Single Post -->
-            <article class="post single">           
+              <article class="post single">           
                 <header>    
-                    <h1 class="page-title">{{ meta.title }}</h1>
-                    
-                   
-		        </header>
+                    <h1 class="page-title">{{ meta.title }}</h1>     
+		            </header>
                                 
-            {% for page in pages|sort_by("time")|reverse %}
-                {% if page.id starts with "blog/" %}
-                <div class="post-content">
-                    <h2 class="post-title">
-                        <a href="{{ page.url }}">
-                            {{ page.title }}
-
-                           
-
-                        </a>
-                    </h2>
-                    <p class="blog_meta"><i>{{ page.date }}</i></p>
-
-                    <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>
-                     							
-                     					
-				</div>
-                {% endif %}
-            {% endfor %}
-
-
-                
-            </article>  
-            <!-- end .post -->
+                {% for page in pages|sort_by("time")|reverse %}
+                    {% if page.id starts with "blog/" %}
+                    <div class="post-content">
+                        <h2 class="post-title">
+                            <a href="{{ page.url }}">
+                                {{ page.title }}
+                            </a>
+                        </h2>
+                            <p class="blog_meta"><i>{{ page.date }}</i></p>
+                            <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>               					
+				            </div>
+                    {% endif %}
+                {% endfor %} 
+              </article>  
+              <!-- end .post -->
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
+      </div>
 
 <!--pagination-->
 
@@ -214,9 +204,7 @@
             </ul>
          </div>
         </div>
-      </div>
-        
-
+      </div>        
   <hr>    
 <!--footer-->
   <footer>
@@ -238,10 +226,8 @@
           &nbsp {% for social in meta.social %}
             <a href="{{ social.url }}" title="{{ social.title }}"><img src=" {{ social.icon }}"></a> &nbsp &nbsp 
           {% endfor %}
-        </div>
-       
-  </footer>
-    
+        </div>       
+  </footer>  
 </div> <!-- /container -->
 
 

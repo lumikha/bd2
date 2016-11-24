@@ -160,82 +160,62 @@
                     
         <!-- main content -->
         <div class="sixteen columns" id="main" role="main">
-        <div class="row">						
-    		<div class="col-md-8 col-md-offset-2">
+          <div class="row">						
+    		    <div class="col-md-8 col-md-offset-2">
             <!-- Single Post -->
-            <article class="post single">           
+              <article class="post single">           
                 <header>    
-                    <h1 class="page-title">{{ meta.title }}</h1>
-                    
-                   
-		        </header>
+                    <h1 class="page-title">{{ meta.title }}</h1>           
+		            </header>
                                 
-            {% for page in pages|sort_by("time")|reverse %}
-                {% if page.id starts with "blog/1" %}
-                <div class="post-content">
-                    <h2 class="post-title">
-                        <a href="{{ page.url }}">
-                            {{ page.title }}
-
-                           
-
-                        </a>
-                    </h2>
-                    <p class="blog_meta"><i>{{ page.date }}</i></p>
-
-                    <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>
-                     							
-                     					
-				        </div>
-                {% endif %}
-            {% endfor %}
-
-
-                
-            </article>  
+                    {% for page in pages|sort_by("time")|reverse %}
+                        {% if page.id starts with "blog/1" %}
+                        <div class="post-content">
+                            <h2 class="post-title">
+                               <a href="{{ page.url }}">
+                                   {{ page.title }}
+                               </a>
+                           </h2>
+                           <p class="blog_meta"><i>{{ page.date }}</i></p>
+                           <p class="blog_excerpt">{{page.meta.excerpt}} <a href="{{page.url}}">[...] </a></p>    					
+				                </div>
+                        {% endif %}
+                    {% endfor %}
+              </article>  
             <!-- end .post -->
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
+      </div>
 
 <!--pagination-->
 
-<div class="row">
-<div class="col-xs-12">
-<div class="pagination"><ul>
-<li class="current"><a href="{{ "1"|link}}">1</a></li>
-<li><a href="{{ "2"|link}}">2</a></li>
-<li><a href="{{ "blog"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pagination">
+          <ul>
+           <li class="current"><a href="{{ "1"|link}}">1</a></li>
+            <li><a href="{{ "2"|link}}">2</a></li>
+           <li><a href="{{ "2"|link}}" class="read-more-btn"><i class="fa fa-angle-double-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
         
-
       <hr>
 
   <footer>
         <div class="row">
-            <div class="col-md-12 center center">
-               
+            <div class="col-md-12 center center">              
                 {{meta.address1 }} <br>
                 {{meta.address2}}<br><br>
-                {{meta.phone}} <br>
-				
-			     <a href="mailto:">{{meta.email}}</a> 
-
-            </div>
-                
-         </div>
+                {{meta.phone}} <br>				
+			           <a href="mailto:">{{meta.email}}</a> 
+            </div>        
+        </div>
         <div class="row">
-
           <div class="col-xs-4">
-
             <p>&copy; {{meta.copyright}}</p>
-
           </div>
 
            <div class="col-xs-8 col-md-4 pull-right"> 
